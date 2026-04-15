@@ -2,6 +2,8 @@
 
 `WTR Lab Novel Tracker` is a Vercel-ready Next.js app for browsing released novels from `wtr-lab.com`, tracking favorites, and notifying users when favorite novels get new chapters.
 
+Disclaimer: This is a fully AI-generated project.
+
 ## What it does
 
 - Browse released novels with filters for search, tags, status, chapter count, and rating
