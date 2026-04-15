@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ExpandableText } from "@/app/_components/ExpandableText";
+import { NovelThumbnail } from "@/app/_components/NovelThumbnail";
 import { fetchReviews, fetchReviewStats, normalizeReviewText } from "@/lib/wtr/reviews";
 import { getBestRankedCached } from "@/lib/wtr/bestCache";
 import { fetchNovelByIdAndSlug } from "@/lib/wtr/novel";
@@ -78,7 +78,7 @@ export default async function BestPage({
               <div className="flex items-start gap-3 sm:w-[320px]">
                 <div className="text-sm font-semibold tabular-nums text-zinc-500">#{start + idx + 1}</div>
                 <div className="relative h-24 w-16 shrink-0 overflow-hidden rounded-lg bg-zinc-900">
-                  {novel.thumbnail ? <Image src={novel.thumbnail} alt="" fill sizes="64px" className="object-cover" /> : null}
+                  {novel.thumbnail ? <NovelThumbnail src={novel.thumbnail} alt="" sizes="64px" className="object-cover" /> : null}
                 </div>
                 <div className="min-w-0">
                   <div className="truncate text-base font-semibold text-zinc-100 group-hover:underline">

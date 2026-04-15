@@ -1,14 +1,19 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { COOKIE_SECRET_REQUIRED_MESSAGE, isMissingServerConfigError } from "@/lib/config-errors";
 import { prisma } from "@/lib/db";
-import { STORAGE_UNAVAILABLE_MESSAGE, isDatabaseUnavailableError } from "@/lib/db-errors";
+import {
+  STORAGE_NOT_READY_MESSAGE,
+  STORAGE_UNAVAILABLE_MESSAGE,
+  isDatabaseSchemaMissingError,
+  isDatabaseUnavailableError,
+} from "@/lib/db-errors";
 import { FavoriteButton } from "@/app/novels/_components/FavoriteButton";
 import { fetchReviews, fetchReviewStats, normalizeReviewText } from "@/lib/wtr/reviews";
 import { getPassiveUserId } from "@/lib/user";
 import { fetchNovelByIdAndSlug } from "@/lib/wtr/novel";
 import { ExpandableText } from "@/app/_components/ExpandableText";
+import { NovelThumbnail } from "@/app/_components/NovelThumbnail";
 
 function normalizeText(text?: string | null) {
   return (text ?? "").replace(/\s+/g, " ").trim().toLowerCase();
@@ -116,6 +121,9 @@ export default async function NovelPage({ params }: { params: Promise<{ id: stri
       } else if (isDatabaseUnavailableError(error)) {
         favoritesAvailable = false;
         favoritesMessage = STORAGE_UNAVAILABLE_MESSAGE;
+      } else if (isDatabaseSchemaMissingError(error)) {
+        favoritesAvailable = false;
+        favoritesMessage = STORAGE_NOT_READY_MESSAGE;
       } else {
         throw error;
       }
@@ -137,9 +145,7 @@ export default async function NovelPage({ params }: { params: Promise<{ id: stri
           <div className="mt-3 flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
             <div className="flex gap-4">
               <div className="relative h-36 w-24 shrink-0 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
-            {novel.thumbnail ? (
-              <Image src={novel.thumbnail} alt="" fill sizes="96px" className="object-cover" />
-            ) : null}
+            {novel.thumbnail ? <NovelThumbnail src={novel.thumbnail} alt="" sizes="96px" className="object-cover" /> : null}
           </div>
               <div className="space-y-3">
                 <h1 className="text-3xl font-semibold tracking-tight text-zinc-50">{novel.titleEn}</h1>

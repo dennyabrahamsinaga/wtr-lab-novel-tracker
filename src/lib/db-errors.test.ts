@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isDatabaseUnavailableError } from "@/lib/db-errors";
+import { isDatabaseSchemaMissingError, isDatabaseUnavailableError } from "@/lib/db-errors";
 
 describe("database availability detection", () => {
   it("detects Prisma known connectivity errors", () => {
@@ -22,5 +22,14 @@ describe("database availability detection", () => {
   it("detects connection-refused fallback messages", () => {
     expect(isDatabaseUnavailableError(new Error("connect ECONNREFUSED 127.0.0.1:5432"))).toBe(true);
     expect(isDatabaseUnavailableError(new Error("some other failure"))).toBe(false);
+  });
+
+  it("detects missing schema/table errors", () => {
+    const error = Object.assign(new Error("table does not exist"), {
+      name: "PrismaClientKnownRequestError",
+      code: "P2021",
+    });
+
+    expect(isDatabaseSchemaMissingError(error)).toBe(true);
   });
 });

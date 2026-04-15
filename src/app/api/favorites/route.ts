@@ -1,7 +1,12 @@
 import { NextResponse } from "next/server";
 import { COOKIE_SECRET_REQUIRED_MESSAGE, isMissingServerConfigError } from "@/lib/config-errors";
 import { prisma } from "@/lib/db";
-import { STORAGE_UNAVAILABLE_MESSAGE, isDatabaseUnavailableError } from "@/lib/db-errors";
+import {
+  STORAGE_NOT_READY_MESSAGE,
+  STORAGE_UNAVAILABLE_MESSAGE,
+  isDatabaseSchemaMissingError,
+  isDatabaseUnavailableError,
+} from "@/lib/db-errors";
 import { getPassiveUser } from "@/lib/user";
 
 export const runtime = "nodejs";
@@ -40,6 +45,9 @@ export async function GET() {
   } catch (error) {
     if (isDatabaseUnavailableError(error)) {
       return NextResponse.json({ error: STORAGE_UNAVAILABLE_MESSAGE }, { status: 503 });
+    }
+    if (isDatabaseSchemaMissingError(error)) {
+      return NextResponse.json({ error: STORAGE_NOT_READY_MESSAGE }, { status: 503 });
     }
     if (isMissingServerConfigError(error)) {
       return NextResponse.json({ error: COOKIE_SECRET_REQUIRED_MESSAGE }, { status: 500 });

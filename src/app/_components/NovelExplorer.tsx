@@ -3,9 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import type { NovelDatasetItem } from "@/lib/wtr/transform";
 import { ExpandableText } from "@/app/_components/ExpandableText";
+import { NovelThumbnail } from "@/app/_components/NovelThumbnail";
 import { readApiErrorMessage } from "@/lib/client-api";
 
 type Tag = { id: number; title: string; slug: string; category: string; count: number };
@@ -503,10 +503,9 @@ export function NovelExplorer({ allTags }: { allTags: Tag[] }) {
             <div className="flex gap-3">
               <div className="relative h-24 w-16 shrink-0 overflow-hidden rounded-lg bg-zinc-900">
                 {n.thumbnail ? (
-                  <Image
+                  <NovelThumbnail
                     src={n.thumbnail}
                     alt=""
-                    fill
                     sizes="56px"
                     className="object-cover"
                   />
