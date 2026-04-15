@@ -1,7 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { signIn, signOut, useSession } from "next-auth/react";
+
+function ConfiguredAuthButton() {
+  const { data: session, status } = useSession();
+
+  if (status === "loading") return null;
+
+  return (
+    <button
+      type="button"
+      onClick={() => (session?.user ? signOut({ callbackUrl: "/" }) : signIn("github"))}
+      className="rounded-md border border-zinc-800 bg-zinc-950 px-2 py-1 text-sm text-zinc-100 hover:bg-zinc-900"
+    >
+      {session?.user ? "Sign out" : "Sign in"}
+    </button>
+  );
+}
 
 export function AuthButton() {
   const [configured, setConfigured] = useState<boolean | null>(null);
@@ -17,20 +33,12 @@ export function AuthButton() {
         if (!cancelled) setConfigured(false);
       }
     }
-    run();
+    void run();
     return () => {
       cancelled = true;
     };
   }, []);
 
   if (!configured) return null;
-
-  return (
-    <Link
-      href="/api/auth/signin"
-      className="rounded-md border border-zinc-800 bg-zinc-950 px-2 py-1 text-sm text-zinc-100 hover:bg-zinc-900"
-    >
-      Sign in
-    </Link>
-  );
+  return <ConfiguredAuthButton />;
 }
