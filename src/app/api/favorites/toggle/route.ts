@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { Prisma } from "@prisma/client";
 import { COOKIE_SECRET_REQUIRED_MESSAGE, isMissingServerConfigError } from "@/lib/config-errors";
 import { prisma } from "@/lib/db";
 import { STORAGE_UNAVAILABLE_MESSAGE, isDatabaseUnavailableError } from "@/lib/db-errors";
@@ -8,6 +7,11 @@ import { isTrustedMutationRequest } from "@/lib/request-guard";
 import { getOrCreateUserId } from "@/lib/user";
 
 export const runtime = "nodejs";
+
+function isPrismaKnownRequestError(error: unknown, code: string) {
+  if (!error || typeof error !== "object") return false;
+  return Reflect.get(error, "name") === "PrismaClientKnownRequestError" && Reflect.get(error, "code") === code;
+}
 
 const bodySchema = z.object({
   wtrNovelId: z.number().int().positive(),
@@ -69,7 +73,7 @@ export async function POST(req: Request) {
     }
     return res;
   } catch (error) {
-    if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === "P2002") {
+    if (isPrismaKnownRequestError(error, "P2002")) {
       return NextResponse.json({ isFavorite: true });
     }
     if (isDatabaseUnavailableError(error)) {

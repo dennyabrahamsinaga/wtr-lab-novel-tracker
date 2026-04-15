@@ -1,12 +1,19 @@
-import { Prisma } from "@prisma/client";
 import { describe, expect, it } from "vitest";
 import { isDatabaseUnavailableError } from "@/lib/db-errors";
 
 describe("database availability detection", () => {
   it("detects Prisma known connectivity errors", () => {
-    const error = new Prisma.PrismaClientKnownRequestError("db offline", {
+    const error = Object.assign(new Error("db offline"), {
+      name: "PrismaClientKnownRequestError",
       code: "P1001",
-      clientVersion: "test",
+    });
+
+    expect(isDatabaseUnavailableError(error)).toBe(true);
+  });
+
+  it("detects Prisma initialization errors", () => {
+    const error = Object.assign(new Error("initialization failed"), {
+      name: "PrismaClientInitializationError",
     });
 
     expect(isDatabaseUnavailableError(error)).toBe(true);

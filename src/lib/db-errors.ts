@@ -1,14 +1,22 @@
-import { Prisma } from "@prisma/client";
-
 export const STORAGE_UNAVAILABLE_MESSAGE =
   "Favorites and notifications are temporarily unavailable because the storage database is offline.";
 
+function hasErrorName(error: unknown, expected: string) {
+  return error instanceof Error && error.name === expected;
+}
+
+function getErrorCode(error: unknown) {
+  if (!error || typeof error !== "object") return null;
+  const code = Reflect.get(error, "code");
+  return typeof code === "string" ? code : null;
+}
+
 export function isDatabaseUnavailableError(error: unknown) {
-  if (error instanceof Prisma.PrismaClientKnownRequestError) {
-    return error.code === "P1001";
+  if (hasErrorName(error, "PrismaClientKnownRequestError")) {
+    return getErrorCode(error) === "P1001";
   }
 
-  if (error instanceof Prisma.PrismaClientInitializationError) {
+  if (hasErrorName(error, "PrismaClientInitializationError")) {
     return true;
   }
 
