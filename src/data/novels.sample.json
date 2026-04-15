@@ -1,0 +1,641 @@
+{
+  "generatedAt": "sample",
+  "items": [
+    {
+      "wtrNovelId": 2,
+      "slug": "lin-yuanxing",
+      "sourceUrlEn": "https://www.wtr-lab.com/en/novel/2/lin-yuanxing",
+      "sourceUrlId": "https://www.wtr-lab.com/id/novel/2/lin-yuanxing",
+      "titleEn": "Lin Yuanxing",
+      "titleId": "Lin Yuanxing",
+      "author": "Zhai Zhu",
+      "descriptionEn": "Su Yun never thought that Tianmen Town, who had lived for more than ten years, was only a person.\n\nHe didn’t even think that outside Tianmen Town, a hundred miles away, it would be a famous no-man’s land.\n\nWhen the boy opened his eyes, the imaginary world collapsed, and the reality of the monsters and monsters was running in front of him.\n\nLin Yuanxing.\n\n- Description from Qidian",
+      "descriptionId": "Su Yun never thought that Tianmen Town, who had lived for more than ten years, was only a person.\n\nHe didn’t even think that outside Tianmen Town, a hundred miles away, it would be a famous no-man’s land.\n\nWhen the boy opened his eyes, the imaginary world collapsed, and the reality of the monsters and monsters was running in front of him.\n\nLin Yuanxing.\n\n- Description from Qidian",
+      "thumbnail": "https://www.wtr-lab.com/api/v2/img?src=series%2FNQqNDyxOD_UwK-8nFEMuSw&w=344&q=80",
+      "chapterCount": 988,
+      "rating": 3.6666667,
+      "totalRates": 6,
+      "inLibrary": 114,
+      "views": 21382,
+      "status": "completed",
+      "releaseStatus": "released",
+      "tagIds": [
+        35,
+        118,
+        125,
+        191,
+        200,
+        264,
+        265,
+        328,
+        343,
+        417,
+        428,
+        452,
+        471,
+        536,
+        612,
+        692,
+        828
+      ],
+      "tags": [
+        {
+          "id": 35,
+          "title": "Ancient Times",
+          "slug": "ancient-times",
+          "category": "Worldbuilding"
+        },
+        {
+          "id": 118,
+          "title": "Character Growth",
+          "slug": "character-growth",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 125,
+          "title": "Child Protagonist",
+          "slug": "child-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 191,
+          "title": "Demons",
+          "slug": "demons",
+          "category": "Beings & Factions"
+        },
+        {
+          "id": 200,
+          "title": "Disabilities",
+          "slug": "disabilities",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 264,
+          "title": "Fantasy Creatures",
+          "slug": "fantasy-creatures",
+          "category": "Beings & Factions"
+        },
+        {
+          "id": 265,
+          "title": "Fantasy World",
+          "slug": "fantasy-world",
+          "category": "Worldbuilding"
+        },
+        {
+          "id": 328,
+          "title": "Hard-Working Protagonist",
+          "slug": "hard-working-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 343,
+          "title": "Hiding True Identity",
+          "slug": "hiding-true-identity",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 417,
+          "title": "Male Protagonist",
+          "slug": "male-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 428,
+          "title": "Master-Disciple Relationship",
+          "slug": "master-disciple-relationship",
+          "category": "Socio-Political Structures"
+        },
+        {
+          "id": 452,
+          "title": "Monsters",
+          "slug": "monsters",
+          "category": "Beings & Factions"
+        },
+        {
+          "id": 471,
+          "title": "Mystery Solving",
+          "slug": "mystery-solving",
+          "category": "Narrative"
+        },
+        {
+          "id": 536,
+          "title": "Politics",
+          "slug": "politics",
+          "category": "Socio-Political Structures"
+        },
+        {
+          "id": 612,
+          "title": "Secrets",
+          "slug": "secrets",
+          "category": "Narrative"
+        },
+        {
+          "id": 692,
+          "title": "Survival",
+          "slug": "survival",
+          "category": "Narrative"
+        },
+        {
+          "id": 828,
+          "title": "Spiritual Energy Revival",
+          "slug": "spiritual-energy-revival",
+          "category": "Worldbuilding"
+        }
+      ],
+      "updatedAt": "2024-03-06 20:05:38.154+00",
+      "lastChapters": [
+        {
+          "order": 988,
+          "title": "Zhaizhu’s new book, Choose a Day to Ascend, has been released!",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        },
+        {
+          "order": 987,
+          "title": "The short story \"Yunluo Hui\" is here!",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        },
+        {
+          "order": 986,
+          "title": "After finishing this testimonials, itchy to the point of explosion! ！ ！",
+          "updatedAt": "2022-01-30 10:11:54.598806+00"
+        },
+        {
+          "order": 985,
+          "title": "The End",
+          "updatedAt": "2022-01-30 10:11:54.598806+00"
+        },
+        {
+          "order": 984,
+          "title": "Chaos 7 Sons",
+          "updatedAt": "2022-01-30 10:11:54.598806+00"
+        }
+      ]
+    },
+    {
+      "wtrNovelId": 7741,
+      "slug": "mystery-lucky",
+      "sourceUrlEn": "https://www.wtr-lab.com/en/novel/7838/mortal-cultivation-portable-space",
+      "sourceUrlId": "https://www.wtr-lab.com/id/novel/7838/mortal-cultivation-portable-space",
+      "titleEn": "Mystery: Lucky",
+      "titleId": "Mystery: Lucky",
+      "author": "Nan Hai You Xing Chen",
+      "descriptionEn": "The bad news is that he died.\nThe good news is that he traveled through time.\nThe bad news is that he traveled through time in a mysterious way.\nThe good news is that he has not read the book.\nThe bad news is... what you just swallowed by mistake seems to be a lucky person's extraordinary characteristics.\n--------\n\"Writers need to pay attention to logic, but fate never pays attention to logic.\"\n--------\nProvisional version introduction: mysterious fan fiction, female protagonist, no CP, monster path, cloud reader (?)\nThis article is also known as \"Tarot Club Raising a Baby\"",
+      "descriptionId": "The bad news is that he died.\nThe good news is that he traveled through time.\nThe bad news is that he traveled through time in a mysterious way.\nThe good news is that he has not read the book.\nThe bad news is... what you just swallowed by mistake seems to be a lucky person's extraordinary characteristics.\n--------\n\"Writers need to pay attention to logic, but fate never pays attention to logic.\"\n--------\nProvisional version introduction: mysterious fan fiction, female protagonist, no CP, monster path, cloud reader (?)\nThis article is also known as \"Tarot Club Raising a Baby\"",
+      "thumbnail": "https://www.wtr-lab.com/api/v2/img?src=s3%3A%2F%2Fwtrimg%2Fseries%2F6D2ZOtxwOqO0i6hsSvdLdA.webp&w=344&q=80",
+      "chapterCount": 726,
+      "rating": 4.368421,
+      "totalRates": 19,
+      "inLibrary": 392,
+      "views": 141188,
+      "status": "completed",
+      "releaseStatus": "released",
+      "tagIds": [
+        31,
+        111,
+        183,
+        196,
+        243,
+        265,
+        275,
+        316,
+        370,
+        409,
+        474,
+        601,
+        612,
+        667,
+        687,
+        717,
+        731,
+        797,
+        799
+      ],
+      "tags": [
+        {
+          "id": 31,
+          "title": "Amnesia",
+          "slug": "amnesia",
+          "category": "Narrative"
+        },
+        {
+          "id": 111,
+          "title": "Calm Protagonist",
+          "slug": "calm-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 183,
+          "title": "Death",
+          "slug": "death",
+          "category": "Narrative"
+        },
+        {
+          "id": 196,
+          "title": "Detectives",
+          "slug": "detectives",
+          "category": "Professional Archetypes"
+        },
+        {
+          "id": 243,
+          "title": "European Ambience",
+          "slug": "european-ambience",
+          "category": "Worldbuilding"
+        },
+        {
+          "id": 265,
+          "title": "Fantasy World",
+          "slug": "fantasy-world",
+          "category": "Worldbuilding"
+        },
+        {
+          "id": 275,
+          "title": "Female Protagonist",
+          "slug": "female-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 316,
+          "title": "Gods",
+          "slug": "gods",
+          "category": "Beings & Factions"
+        },
+        {
+          "id": 370,
+          "title": "Investigations",
+          "slug": "investigations",
+          "category": "Narrative"
+        },
+        {
+          "id": 409,
+          "title": "Lucky Protagonist",
+          "slug": "lucky-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 474,
+          "title": "Naive Protagonist",
+          "slug": "naive-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 601,
+          "title": "Schemes And Conspiracies",
+          "slug": "schemes-and-conspiracies",
+          "category": "Narrative"
+        },
+        {
+          "id": 612,
+          "title": "Secrets",
+          "slug": "secrets",
+          "category": "Narrative"
+        },
+        {
+          "id": 667,
+          "title": "Special Abilities",
+          "slug": "special-abilities",
+          "category": "Power Systems"
+        },
+        {
+          "id": 687,
+          "title": "Sudden Strength Gain",
+          "slug": "sudden-strength-gain",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 717,
+          "title": "Transmigration",
+          "slug": "transmigration",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 731,
+          "title": "Underestimated Protagonist",
+          "slug": "underestimated-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 797,
+          "title": "Devouring",
+          "slug": "devouring",
+          "category": "Power Systems"
+        },
+        {
+          "id": 799,
+          "title": "Lord of the Mysteries",
+          "slug": "lord-of-the-mysteries",
+          "category": "Adaptations"
+        }
+      ],
+      "updatedAt": "2025-05-31 10:29:06.501+00",
+      "lastChapters": [
+        {
+          "order": 726,
+          "title": "Closing remarks",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        },
+        {
+          "order": 725,
+          "title": "Chapter 101 Sixteen Years (End)",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        },
+        {
+          "order": 724,
+          "title": "Chapter 100 Sixteen Years (V)",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        },
+        {
+          "order": 723,
+          "title": "Chapter 99 Sixteen Years (Part 4)",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        },
+        {
+          "order": 722,
+          "title": "Chapter 98 Sixteen Years (Part 3)",
+          "updatedAt": "2026-02-13 14:01:00.792+00"
+        }
+      ]
+    },
+    {
+      "wtrNovelId": 57648,
+      "slug": "doulou-continent-blue-overlord",
+      "sourceUrlEn": "https://www.wtr-lab.com/en/novel/59412/i-started-with-a-natural-disaster-so-i-stockpiled-billions-of-resources-and-then-just-sat-around-doing-nothing-in-the-apocalypse",
+      "sourceUrlId": "https://www.wtr-lab.com/id/novel/59412/i-started-with-a-natural-disaster-so-i-stockpiled-billions-of-resources-and-then-just-sat-around-doing-nothing-in-the-apocalypse",
+      "titleEn": "Doulou Continent: Blue Overlord",
+      "titleId": "Doulou Continent: Blue Overlord",
+      "author": "Qu You Le Chang",
+      "descriptionEn": "While watching the Douluo Continent anime, Yu Tiancheng was unexpectedly struck by lightning and transmigrated, becoming a direct disciple of the Blue Lightning Tyrant Dragon Clan! Knowing the original story intimately, he was acutely aware that his clan was about to be massacred by the Spirit Hall! To rewrite his clan's fate, he decided to intercept Tang San and seize all his opportunities! Immortal herbs, spirit rings, divine inheritance… he would grab them all! Fortunately, although he lacked a system, he possessed the heaven-defying ability to devour lightning! He tempered his body with lightning, causing his spirit power to surge! He forged an invincible path with lightning, vowing to ascend to godhood and suppress all enemies!",
+      "descriptionId": "While watching the Douluo Continent anime, Yu Tiancheng was unexpectedly struck by lightning and transmigrated, becoming a direct disciple of the Blue Lightning Tyrant Dragon Clan! Knowing the original story intimately, he was acutely aware that his clan was about to be massacred by the Spirit Hall! To rewrite his clan's fate, he decided to intercept Tang San and seize all his opportunities! Immortal herbs, spirit rings, divine inheritance… he would grab them all! Fortunately, although he lacked a system, he possessed the heaven-defying ability to devour lightning! He tempered his body with lightning, causing his spirit power to surge! He forged an invincible path with lightning, vowing to ascend to godhood and suppress all enemies!",
+      "thumbnail": "https://www.wtr-lab.com/api/v2/img?src=s3%3A%2F%2Fwtrimg%2Fseries%2FxATrfbegbfoa1u_n1R96EbYF4lOtZKvreEjznvcuzvQ.jpg&w=344&q=80",
+      "chapterCount": 63,
+      "rating": 2.4444444,
+      "totalRates": 9,
+      "inLibrary": 203,
+      "views": 18495,
+      "status": "other",
+      "releaseStatus": "released",
+      "tagIds": [
+        30,
+        51,
+        74,
+        95,
+        111,
+        122,
+        125,
+        134,
+        197,
+        257,
+        265,
+        267,
+        268,
+        306,
+        316,
+        342,
+        417,
+        426,
+        432,
+        485,
+        515,
+        555,
+        577,
+        578,
+        611,
+        667,
+        680,
+        721,
+        731,
+        750,
+        772,
+        781,
+        797
+      ],
+      "tags": [
+        {
+          "id": 30,
+          "title": "Alternate World",
+          "slug": "alternate-world",
+          "category": "Worldbuilding"
+        },
+        {
+          "id": 51,
+          "title": "Aristocracy",
+          "slug": "aristocracy",
+          "category": "Socio-Political Structures"
+        },
+        {
+          "id": 74,
+          "title": "Based on an Anime",
+          "slug": "based-on-an-anime",
+          "category": "Adaptations"
+        },
+        {
+          "id": 95,
+          "title": "Body Tempering",
+          "slug": "body-tempering",
+          "category": "Power Systems"
+        },
+        {
+          "id": 111,
+          "title": "Calm Protagonist",
+          "slug": "calm-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 122,
+          "title": "Cheats",
+          "slug": "cheats",
+          "category": "Power Systems"
+        },
+        {
+          "id": 125,
+          "title": "Child Protagonist",
+          "slug": "child-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 134,
+          "title": "Clever Protagonist",
+          "slug": "clever-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 197,
+          "title": "Determined Protagonist",
+          "slug": "determined-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 257,
+          "title": "Family",
+          "slug": "family",
+          "category": "Relationship Tropes"
+        },
+        {
+          "id": 265,
+          "title": "Fantasy World",
+          "slug": "fantasy-world",
+          "category": "Worldbuilding"
+        },
+        {
+          "id": 267,
+          "title": "Fast Cultivation",
+          "slug": "fast-cultivation",
+          "category": "Power Systems"
+        },
+        {
+          "id": 268,
+          "title": "Fast Learner",
+          "slug": "fast-learner",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 306,
+          "title": "Genius Protagonist",
+          "slug": "genius-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 316,
+          "title": "Gods",
+          "slug": "gods",
+          "category": "Beings & Factions"
+        },
+        {
+          "id": 342,
+          "title": "Hiding True Abilities",
+          "slug": "hiding-true-abilities",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 417,
+          "title": "Male Protagonist",
+          "slug": "male-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 426,
+          "title": "Martial Spirits",
+          "slug": "martial-spirits",
+          "category": "Power Systems"
+        },
+        {
+          "id": 432,
+          "title": "Mature Protagonist",
+          "slug": "mature-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 485,
+          "title": "Nobles",
+          "slug": "nobles",
+          "category": "Socio-Political Structures"
+        },
+        {
+          "id": 515,
+          "title": "Past Plays a Big Role",
+          "slug": "past-plays-a-big-role",
+          "category": "Narrative"
+        },
+        {
+          "id": 555,
+          "title": "Proactive Protagonist",
+          "slug": "proactive-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 577,
+          "title": "Reincarnated in Another World",
+          "slug": "reincarnated-in-another-world",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 578,
+          "title": "Reincarnation",
+          "slug": "reincarnation",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 611,
+          "title": "Secretive Protagonist",
+          "slug": "secretive-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 667,
+          "title": "Special Abilities",
+          "slug": "special-abilities",
+          "category": "Power Systems"
+        },
+        {
+          "id": 680,
+          "title": "Strength-based Social Hierarchy",
+          "slug": "strength-based-social-hierarchy",
+          "category": "Socio-Political Structures"
+        },
+        {
+          "id": 721,
+          "title": "Transported to Another World",
+          "slug": "transported-to-another-world",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 731,
+          "title": "Underestimated Protagonist",
+          "slug": "underestimated-protagonist",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 750,
+          "title": "Weak to Strong",
+          "slug": "weak-to-strong",
+          "category": "Protagonist Archetypes"
+        },
+        {
+          "id": 772,
+          "title": "Douluo Dalu",
+          "slug": "douluo-dalu",
+          "category": "Adaptations"
+        },
+        {
+          "id": 781,
+          "title": "Gao Wu",
+          "slug": "gao-wu",
+          "category": "Power Systems"
+        },
+        {
+          "id": 797,
+          "title": "Devouring",
+          "slug": "devouring",
+          "category": "Power Systems"
+        }
+      ],
+      "updatedAt": "2026-04-04 00:14:17.635977+00",
+      "lastChapters": [
+        {
+          "order": 63,
+          "title": "Chapter 63 Searching for the Blue Silver Forest",
+          "updatedAt": "2026-04-04 00:14:17.57+00"
+        },
+        {
+          "order": 62,
+          "title": "Chapter 62 Strength Test",
+          "updatedAt": "2026-04-04 00:14:17.57+00"
+        },
+        {
+          "order": 61,
+          "title": "Chapter 61 Douluo Version of Five Thunder Technique",
+          "updatedAt": "2026-04-04 00:14:17.57+00"
+        },
+        {
+          "order": 60,
+          "title": "Chapter 60 Five Elements Golden Body",
+          "updatedAt": "2026-04-04 00:14:17.57+00"
+        },
+        {
+          "order": 59,
+          "title": "Chapter 59 Full Body Martial Soul Transformation",
+          "updatedAt": "2026-04-04 00:14:17.57+00"
+        }
+      ]
+    }
+  ]
+}
