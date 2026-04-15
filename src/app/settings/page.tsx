@@ -9,8 +9,8 @@ export default function SettingsPage() {
       <div className="rounded-xl border border-zinc-800 bg-zinc-900/60 p-4">
         <h2 className="text-sm font-semibold">Notifications</h2>
         <p className="mt-1 text-sm text-zinc-400">
-          Enable push notifications to get alerted when new chapters are detected for your favorited novels. No login is
-          required; favorites are stored to your browser profile (cookie) and database.
+          Enable push notifications to get alerted when new chapters are detected for your favorite novels. No login is
+          required. Favorites are linked to your browser profile cookie and stored in the database.
         </p>
         <div className="mt-3">
           <PushSettings vapidPublicKey={publicKey} />
@@ -18,7 +18,7 @@ export default function SettingsPage() {
       </div>
       <div className="rounded-xl border border-zinc-800 bg-zinc-900/60 p-4">
         <h2 className="text-sm font-semibold">Favorites</h2>
-        <p className="mt-1 text-sm text-zinc-400">Your favorited novels are checked by cron for new chapters.</p>
+        <p className="mt-1 text-sm text-zinc-400">Your favorite novels are checked on a schedule for new chapters.</p>
         <div className="mt-3">
           <FavoritesPanel />
         </div>
