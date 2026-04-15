@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { Suspense } from "react";
 import { AuthButton } from "@/app/_components/AuthButton";
 import { Providers } from "@/app/providers";
+import { UrlSanitizer } from "@/app/_components/UrlSanitizer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +34,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100">
         <Providers>
+          <Suspense fallback={null}>
+            <UrlSanitizer />
+          </Suspense>
           <header className="sticky top-0 z-20 border-b border-zinc-800/80 bg-zinc-950/75 backdrop-blur-xl">
             <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3">
               <Link href="/" className="flex items-center gap-3 font-semibold tracking-tight">
