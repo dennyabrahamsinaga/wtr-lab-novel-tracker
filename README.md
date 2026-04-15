@@ -77,7 +77,9 @@ Then set:
 - `VAPID_PRIVATE_KEY`
 - `NEXT_PUBLIC_VAPID_PUBLIC_KEY`
 
-`vercel.json` already schedules `GET /api/cron/check-updates` every 30 minutes. Protect that route with `CRON_SECRET` in production.
+`/api/cron/check-updates` is protected with `CRON_SECRET`.
+
+For Vercel Hobby, use an external scheduler such as GitHub Actions because Hobby cron is limited. This repo includes a GitHub Actions workflow for 30-minute checks.
 
 ## Vercel deployment
 
@@ -101,7 +103,7 @@ Notes:
 
 - Use a managed PostgreSQL database for Vercel deployment.
 - `docker-compose.yml` is only for local development.
-- The configured `*/30 * * * *` cron schedule requires a Vercel plan that supports 30-minute cron jobs.
+- On Vercel Hobby, use the included GitHub Actions scheduler instead of Vercel Cron for 30-minute checks.
 
 ## Quality checks
 

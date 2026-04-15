@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { hasValidCronSecret, isTrustedMutationRequest } from "@/lib/request-guard";
+import { hasAuthorizedCronAccess, hasValidCronSecret, isTrustedMutationRequest, isVercelCronRequest } from "@/lib/request-guard";
 
 describe("request guards", () => {
   it("accepts same-origin mutation requests", () => {
@@ -37,5 +37,26 @@ describe("request guards", () => {
     expect(hasValidCronSecret(valid, "top-secret")).toBe(true);
     expect(hasValidCronSecret(invalid, "top-secret")).toBe(false);
     expect(hasValidCronSecret(invalid, undefined)).toBe(true);
+  });
+
+  it("recognizes Vercel cron requests", () => {
+    const req = new Request("https://app.example.com/api/cron/check-updates", {
+      headers: { "x-vercel-cron": "1" },
+    });
+    expect(isVercelCronRequest(req)).toBe(true);
+  });
+
+  it("allows either Vercel cron or bearer-secret cron access", () => {
+    const vercelReq = new Request("https://app.example.com/api/cron/check-updates", {
+      headers: { "x-vercel-cron": "1" },
+    });
+    const bearerReq = new Request("https://app.example.com/api/cron/check-updates", {
+      headers: { authorization: "Bearer top-secret" },
+    });
+    const invalidReq = new Request("https://app.example.com/api/cron/check-updates");
+
+    expect(hasAuthorizedCronAccess(vercelReq, "top-secret")).toBe(true);
+    expect(hasAuthorizedCronAccess(bearerReq, "top-secret")).toBe(true);
+    expect(hasAuthorizedCronAccess(invalidReq, "top-secret")).toBe(false);
   });
 });

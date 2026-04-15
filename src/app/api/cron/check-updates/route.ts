@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { STORAGE_UNAVAILABLE_MESSAGE, isDatabaseUnavailableError } from "@/lib/db-errors";
-import { hasValidCronSecret } from "@/lib/request-guard";
+import { hasAuthorizedCronAccess } from "@/lib/request-guard";
 import { sendPush } from "@/lib/push";
 import { getServerEnv } from "@/lib/env";
 import { isStalePushSubscriptionError, shouldAdvanceNotificationCheckpoint } from "@/lib/notifications/logic";
@@ -9,19 +9,10 @@ import { fetchNovelByIdAndSlug } from "@/lib/wtr/novel";
 
 export const runtime = "nodejs";
 
-function isCron(req: Request) {
-  // Vercel Cron sends this header.
-  return req.headers.get("x-vercel-cron") === "1";
-}
-
 export async function GET(req: Request) {
   try {
-    if (process.env.NODE_ENV === "production" && !isCron(req)) {
-      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
-    }
-
     const env = getServerEnv();
-    if (!hasValidCronSecret(req, env.CRON_SECRET)) {
+    if (!hasAuthorizedCronAccess(req, env.CRON_SECRET)) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
     if (!env.VAPID_SUBJECT || !env.VAPID_PUBLIC_KEY || !env.VAPID_PRIVATE_KEY) {

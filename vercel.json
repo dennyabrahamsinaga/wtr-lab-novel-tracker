@@ -1,9 +1,1 @@
-{
-  "crons": [
-    {
-      "path": "/api/cron/check-updates",
-      "schedule": "*/30 * * * *"
-    }
-  ]
-}
-
+{}
